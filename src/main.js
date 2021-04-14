@@ -13,7 +13,6 @@ const initialState = {
 
 async function main() {
   const dom = getDOM();
-  console.log('dom :>> ', dom);
 
   const model = Model(initialState);
   const db = CountryDB(model);

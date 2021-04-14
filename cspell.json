@@ -1,8 +1,4 @@
 {
-    "version": "0.1",
-    "words": [
-        "eqeqeq",
-        "Repos",
-        "restcountries"
-    ]
+  "version": "0.1",
+  "words": ["eqeqeq", "restcountries"]
 }
