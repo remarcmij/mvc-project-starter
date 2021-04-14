@@ -1,0 +1,22 @@
+{
+  "name": "mvc-project-starter",
+  "version": "1.0.0",
+  "description": "A vanilla JavaScript MVC example",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remarcmij/mvc-project-starter"
+  },
+  "keywords": [
+    "HackYourFuture"
+  ],
+  "author": "Jim Cramer for HackYourFuture",
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "eslint": "^7.19.0",
+    "prettier": "^2.2.1"
+  }
+}
