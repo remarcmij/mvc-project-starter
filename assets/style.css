@@ -5,3 +5,19 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(0, 0, 0, 87%);
 }
+
+table {
+  table-layout: fixed;
+  color: rgb(0, 0, 0, 81%);
+}
+
+td,
+th {
+  vertical-align: top;
+}
+
+th {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
