@@ -9,21 +9,25 @@ function AppModel() {
 
   const { getState, setState, subscribe } = Model(initialState);
 
+  const getCountryList = () => {
+    const countries = restCountries.map(({ name, alpha3Code }) => ({
+      name,
+      alpha3Code,
+    }));
+    setState({ ...getState(), countries });
+  };
+
+  const getCountryDetails = (alpha3Code) => {
+    const country = restCountries.find((c) => c.alpha3Code === alpha3Code);
+    setState({ ...getState(), country });
+  };
+
   return {
     getState,
     setState,
     subscribe,
-    getCountryList() {
-      const countries = restCountries.map(({ name, alpha3Code }) => ({
-        name,
-        alpha3Code,
-      }));
-      setState({ ...getState(), countries });
-    },
-    getCountryDetails(alpha3Code) {
-      const country = restCountries.find((c) => c.alpha3Code === alpha3Code);
-      setState({ ...getState(), country });
-    },
+    getCountryList,
+    getCountryDetails,
   };
 }
 
