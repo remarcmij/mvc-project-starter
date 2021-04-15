@@ -1,7 +1,7 @@
-function CountrySelectController(dom, db) {
+function CountrySelectController(dom, model) {
   dom.countrySelect.addEventListener('change', (event) => {
     if (event.target.value !== '') {
-      db.getCountryDetails(event.target.value);
+      model.getCountryDetails(event.target.value);
     }
   });
 }
